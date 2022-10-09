@@ -5,7 +5,6 @@ from PIL import Image, ImageDraw, ImageOps, ImageFont
 # Characters used for Mapping to Pixels
 Character = {
     "standard": "@%#*+=-:. ",
-    "complex": "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,\"^`'. "
 }
 
 
@@ -27,7 +26,7 @@ elif bg == "black":
 # Getting the character List, Font and Scaling characters for square Pixels
 char_list, font, scale = get_data("complex")
 num_chars = len(char_list)
-num_cols = 300
+num_cols = 400
 
 # Reading Input Image
 image = cv2.imread("among.jpg")
